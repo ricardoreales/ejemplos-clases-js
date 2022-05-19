@@ -1,0 +1,36 @@
+#btnAceptar{
+
+    color: rgb(132, 203, 26);
+    padding: 20px;
+}
+
+#btnCancelar {
+    
+    color: red;
+    padding: 20px;
+
+
+}
+
+
+.resultadosContainer{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.stiloResultados {
+    border: 1px solid green;
+    height: 30px;
+    width: 150px;
+}
+
+.btnCalcular{
+    color: white;
+    background: red;
+}
+
+.btnCalcular:hover{
+    background: rgb(223, 214, 80);
+}
