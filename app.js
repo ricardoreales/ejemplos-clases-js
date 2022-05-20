@@ -28,30 +28,42 @@
 // // }
 
 
-let valor1 = document.getElementById("valor1")
-let valor2 = document.getElementById("valor2")
-
-let suma = document.getElementById("suma")
-let resta = document.getElementById("resta")
-let multiplicacion = document.getElementById("m,ultiplicacion")
-let division = document.getElementById("division")
+let inpuValor1 = document.getElementById("valor1")
+let inpuValor2 = document.getElementById("valor2")
 
 let btnCalcular = document.getElementById("btnCalcular")
 
-
-// btnAceptar.onclick = () => {alert("Gracias por su compra")}
-btnCalcular.onclick = (valor1,valor2) => {
-    let suma = valor1 + valor2
-    let resta = valor1 - valor2
-    let multiplicacion = valor1 * valor2
-    let division = valor1 * valor2
+const multiCalculadora = (a, b) => {
+    let suma = a + b
+    let rest = a - b
+    let mult = a * b
+    let div = a / b
+    return [suma,rest,mult,div]
 }
 
+btnCalcular.onclick = () => {
 
+    let num1 = parseFloat(inpuValor1.value)
+    let num2 = parseFloat(inpuValor2.value)
 
+    let result = multiCalculadora(num1,num2)
+    console.log(result)
+    // let suma = num1 + num2
+    // let rest = num1 - num2
+    // let mult = num1 * num2
+    // let div = num1 / num2
 
+    // document.getElementById("suma").innerHTML = suma
+    // document.getElementById("resta").innerHTML = rest
+    // document.getElementById("multiplicacion").innerHTML = mult
+    // document.getElementById("division").innerHTML = div
 
+    document.getElementById("suma").innerHTML = result[0]
+    document.getElementById("resta").innerHTML = result[1]
+    document.getElementById("multiplicacion").innerHTML = result[2]
+    document.getElementById("division").innerHTML = result[3]
 
+}
 
 
 
