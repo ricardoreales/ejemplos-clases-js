@@ -28,8 +28,8 @@
 // // }
 
 
-let inpuValor1 = document.getElementById("valor1")
-let inpuValor2 = document.getElementById("valor2")
+let inputValor1 = document.getElementById("valor1")
+let inputValor2 = document.getElementById("valor2")
 
 let btnCalcular = document.getElementById("btnCalcular")
 
@@ -43,8 +43,8 @@ const multiCalculadora = (a, b) => {
 
 btnCalcular.onclick = () => {
 
-    let num1 = parseFloat(inpuValor1.value)
-    let num2 = parseFloat(inpuValor2.value)
+    let num1 = parseFloat(inputValor1.value)
+    let num2 = parseFloat(inputValor2.value)
 
     let result = multiCalculadora(num1,num2)
     console.log(result)

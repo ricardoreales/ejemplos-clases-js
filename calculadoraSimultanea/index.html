@@ -21,7 +21,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link href="./main.css" rel="stylesheet" type="text/css" />
+        <link href="./calculadoraSimultanea.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
@@ -46,16 +46,13 @@
 
 
 
+<div class="calculaContainer backGround"> 
+        <h1>CALCULADORA SIMULTANEA</h1>
+        <input class="inputValor" id="valor1" type="number" placeholder="valor1">
+        <input class="inputValor" id="valor2" type="number" placeholder="valor2">
+        <button class="btn_calcular" id="btnCalcular">CALCULAR</button>
 
-        CALCULADORA MULTIPLE 
-        <br>
-
-
-        <input id="valor1" type="number" placeholder="valor1">
-        <input id="valor2" type="number" placeholder="valor2">
-        <button class="btnCalcular" id="btnCalcular">CALCULAR</button>
-
-        <div class="resultadosContainer">
+        <div class="resultadosContainer"  >
             <h3>suma</h3>
             <div class="stiloResultados" id="suma"></div>
             <h3>resta</h3>
@@ -65,6 +62,7 @@
             <h3>division</h3>
             <div class="stiloResultados" id="division"></div>
         </div>
+    </div>
 
 
 
